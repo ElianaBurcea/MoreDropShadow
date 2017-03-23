@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<head>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <div id="photo-box">
+        <img id="photo" src='more_grumpy_shadow.png' onclick='moreShadow()' width='450px' height="350px">
+    </div>
+<script>
+
+var pressedPhoto = document.getElementById('photo');
+pressedPhoto.onclick=function applyShadow() {
+document.getElementById('photo').style.boxShadow = "10px 20px 30px yellow";
+}
+
+function moreShadow(){
+    var reclicked = document.getElementById('photo').onClick.style.boxShadow
+    while (reclicked === true) {
+        document.getElementById('photo').style.boxShadow = applyShadow();
+    }
+}
+ 
+</script>
+</body>
+</html>
